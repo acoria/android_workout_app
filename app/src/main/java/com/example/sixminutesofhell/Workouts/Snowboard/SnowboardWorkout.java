@@ -6,6 +6,7 @@ import com.example.sixminutesofhell.FRM.Workout;
 
 /**
  * Created by vtewes on 07.01.2018.
+ * Test
  */
 
 public class SnowboardWorkout extends Workout {
