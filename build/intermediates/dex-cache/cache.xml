@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\.android\build-cache\c1fe7137555f60e1394dd88cb288072d02f2019c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b62f282e17018edfab58a59e84b12216ae3fb41e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_fed58f2be23f6a7a8be5d7969d3ab153c5792c61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ecf6295f9bc976a3d885ce6bf44cf2e58a18847">
+        <dex dex="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_337ac520a23144f06d90c54907161a66040ef5fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\.android\build-cache\cf69a877ee709e4374754e1cb65672e17c028c3c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_17cab18b7dac958bb45d096a6fd98166850389f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.0_41eedbfd20dd2dd2418d3196981e3448909af80d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\.android\build-cache\068142425f4c583f5a5532f02541a1d2202324f0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a4fcdb8e90c8e29b630c8461f5be19e76ccda139\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\.android\build-cache\3ff4ec5ffca6cd0161c36119ed8a127725c1b63f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e42763dc949a5cc8a7c0337f25085ab86b90253\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Verena\.android\build-cache\c1fe7137555f60e1394dd88cb288072d02f2019c\output\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.0_11463a5ae47678139a8d6b5d51bd13a4837fbc22\classes.dex" />
+    </item>
+
+</items>
