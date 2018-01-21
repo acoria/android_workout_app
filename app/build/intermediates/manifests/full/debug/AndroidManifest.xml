@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sixminutesofhell"
+    android:versionCode="1"
+    android:versionName="1.0" > <!-- mine: 2.3 Gingerbread / API 10 -->
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.example.sixminutesofhell.Activities.Act_ConfigureExercises"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.sixminutesofhell.Activities.Act_TimerDisplay"
+            android:configChanges="orientation|screenSize" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.example.sixminutesofhell.Activities.Act_InitialScreen" >
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:label="@string/app_name" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.sixminutesofhell.Activities.Act_SnowboardStretches" />
+    </application>
+
+</manifest> <!-- Explanations: -->
+<!--
+ android:configChanges="orientation|screenSize" -> causes the configuration "orientation" to be handled manually.
+    Turning the device will not restart the activity. But: e.g. images have to be turned manually in onConfigurationChanged()
+-->

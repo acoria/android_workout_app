@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.sixminutesofhell.Activities.Act_InitialScreen"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_minOfHellWorkout"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_cab_background_top_holo_dark"
+        android:text="@string/minOfHellWorkout"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button_snowboardWorkout"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_cab_background_top_holo_dark"
+        android:text="@string/snowboardWorkout"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button_snowboardStretches"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_cab_background_top_holo_dark"
+        android:text="@string/snowboardStretches"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/ic_launcher"></LinearLayout>
+</LinearLayout>

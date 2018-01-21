@@ -1,0 +1,4 @@
+#Sun Jan 21 13:55:09 CET 2018
+base.0=C\:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

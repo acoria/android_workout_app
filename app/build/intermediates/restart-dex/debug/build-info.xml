@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="22"
+    build-mode="COLD"
+    density="560dpi"
+    format="10"
+    plugin-version="2.3.3"
+    timestamp="1515530793512"
+    token="2626789057431919251"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1515530576345"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1515530793512"
+        verifier="COLD_SWAP_REQUESTED" />
+
+</instant-run>
