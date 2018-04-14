@@ -2,76 +2,130 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\Verena\.android\build-cache\c1fe7137555f60e1394dd88cb288072d02f2019c\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\vtewe\.android\build-cache\c5cb902539baf9395a4dc6f752597b0a1858f5b6\output\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b62f282e17018edfab58a59e84b12216ae3fb41e\classes.dex" />
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_a7c1a0272b1cef177a04dc8833c002b7cf988dc1.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_fed58f2be23f6a7a8be5d7969d3ab153c5792c61\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6ecf6295f9bc976a3d885ce6bf44cf2e58a18847">
-        <dex dex="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_337ac520a23144f06d90c54907161a66040ef5fb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Verena\.android\build-cache\cf69a877ee709e4374754e1cb65672e17c028c3c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
-        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_17cab18b7dac958bb45d096a6fd98166850389f0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Verena\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.0_41eedbfd20dd2dd2418d3196981e3448909af80d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Verena\.android\build-cache\068142425f4c583f5a5532f02541a1d2202324f0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a4fcdb8e90c8e29b630c8461f5be19e76ccda139\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Verena\.android\build-cache\3ff4ec5ffca6cd0161c36119ed8a127725c1b63f\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
-        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e42763dc949a5cc8a7c0337f25085ab86b90253\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Verena\.android\build-cache\c1fe7137555f60e1394dd88cb288072d02f2019c\output\jars\libs\internal_impl-22.2.0.jar"
+        jar="C:\Users\vtewe\.android\build-cache\c5cb902539baf9395a4dc6f752597b0a1858f5b6\output\jars\libs\internal_impl-22.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="C:\Users\Verena\StudioProjects\2016_05_16_2153_SixMinutesOfHell_navigation\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.0_11463a5ae47678139a8d6b5d51bd13a4837fbc22\classes.dex" />
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.0_a7c1a0272b1cef177a04dc8833c002b7cf988dc1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\.android\build-cache\de8b4bef45ea0b47f4da9f660a4909d940ab4b03\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d9fb1c5ec9f05aab77c7513f37ef028a8f31e6a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vtewe\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0_2c9dd4adbeda59661f630cbe67acbc151896536a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\.android\build-cache\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bf6fa90adaae869d6dea9319b03d0de82a11d4b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.0_2c9dd4adbeda59661f630cbe67acbc151896536a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vtewe\.android\build-cache\de8b4bef45ea0b47f4da9f660a4909d940ab4b03\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\pre-dexed\debug\classes_d9fb1c5ec9f05aab77c7513f37ef028a8f31e6a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vtewe\.android\build-cache\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\pre-dexed\debug\classes_bf6fa90adaae869d6dea9319b03d0de82a11d4b1.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a733073fcf09cad017336381a55b6801d312991e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\.android\build-cache\5be05ad4b588959751445ebdd4682e47d8f7f3db\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5ffbe9210ba30377b73fff8c617c3403edc2a2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe5c25bbdc0a0acb70976f9885b3fa746560943e">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e27dd8bea7155a1c59b221e68cd813f779007a3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vtewe\.android\build-cache\5be05ad4b588959751445ebdd4682e47d8f7f3db\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\pre-dexed\debug\classes_b5ffbe9210ba30377b73fff8c617c3403edc2a2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vtewe\.android\build-cache\c5cb902539baf9395a4dc6f752597b0a1858f5b6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\pre-dexed\debug\classes_f94d8fde338e15f5cd8611b986f864b62d72230c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vtewe\.android\build-cache\c5cb902539baf9395a4dc6f752597b0a1858f5b6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f94d8fde338e15f5cd8611b986f864b62d72230c\classes.dex" />
     </item>
 
 </items>

@@ -3,6 +3,8 @@ package com.example.sixminutesofhell.UnitTests;
 import com.example.sixminutesofhell.Workouts.MinOfHell.MinOfHellUnitConfig;
 import com.example.sixminutesofhell.Workouts.MinOfHell.MinOfHellUnitProvider;
 import com.example.sixminutesofhell.Workouts.MinOfHell.MinOfHellWorkout;
+import com.example.sixminutesofhell.Workouts.MinOfHellCustomWorkout.MinOfHellCustomUnitProvider;
+import com.example.sixminutesofhell.Workouts.MinOfHellCustomWorkout.MinOfHellCustomWorkout;
 import com.example.sixminutesofhell.Workouts.Snowboard.SnowboardUnitConfig;
 import com.example.sixminutesofhell.Workouts.Snowboard.SnowboardUnitProvider;
 import com.example.sixminutesofhell.Workouts.Snowboard.SnowboardWorkout;
@@ -41,6 +43,21 @@ class TestWorkouts extends Test {
             setPointOfTestFailure("minOfHell cast");
         }
 
+        MinOfHellCustomWorkout minCustomWorkout = new MinOfHellCustomWorkout();
+        try{
+            MinOfHellUnitConfig minOfHellConfig = (MinOfHellUnitConfig) minWorkout.getUnitConfig();
+            if(minOfHellConfig == null){
+                setPointOfTestFailure("minOfHellUnitConfig");
+                return false;
+            }
+            MinOfHellCustomUnitProvider minOfHellCustomProvider = (MinOfHellCustomUnitProvider) minWorkout.getUnitProvider();
+            if(minOfHellCustomProvider == null){
+                setPointOfTestFailure("minOfHellCustomUnitProvider");
+                return false;
+            }
+        }catch(ClassCastException e){
+            setPointOfTestFailure("minOfHell cast");
+        }
         SnowboardWorkout snowboardWorkout = new SnowboardWorkout();
         try{
             SnowboardUnitConfig snowboardUnitConfig = (SnowboardUnitConfig) snowboardWorkout.getUnitConfig();

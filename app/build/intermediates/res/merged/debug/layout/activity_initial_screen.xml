@@ -19,6 +19,15 @@
         android:textColor="@color/white"/>
 
     <Button
+        android:id="@+id/button_minOfHellCustomWorkout"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_cab_background_top_holo_dark"
+        android:text="@string/minOfHellCustomWorkout"
+        android:textColor="@color/white"/>
+
+    <Button
         android:id="@+id/button_snowboardWorkout"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"

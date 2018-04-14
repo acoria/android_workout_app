@@ -12,6 +12,7 @@
     <string name="button_unit_back">Back</string>
     <string name="button_unit_skip">Skip</string>
     <string name="minOfHellWorkout">6 Minutes of Hell Workout</string>
+    <string name="minOfHellCustomWorkout">6 Minutes of Hell Workout - Custom</string>
     <string name="snowboardWorkout">Intermediate Snowboard Workout</string>
     <string name="snowboardStretches">Snowboard Stretches</string>
 </resources>

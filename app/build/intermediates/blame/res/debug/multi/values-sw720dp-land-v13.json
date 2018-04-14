@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+        "outputFile": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,37 +11,13 @@
                     "endOffset": 109
                 },
                 "from": {
-                    "file": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
+                    "file": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 205,
+                        "startOffset": 206,
                         "endColumn": 58,
-                        "endOffset": 259
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 58,
-                    "endOffset": 109
-                },
-                "from": {
-                    "file": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\src\\main\\res\\values-sw720dp-land\\dimens.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 205,
-                        "endColumn": 58,
-                        "endOffset": 259
+                        "endOffset": 260
                     }
                 }
             }

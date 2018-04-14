@@ -830,18 +830,19 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0031;
         public static final int action_mode_bar_stub=0x7f0c0030;
         public static final int action_mode_close_button=0x7f0c0024;
-        public static final int action_settings=0x7f0c0051;
+        public static final int action_settings=0x7f0c0052;
         public static final int activity_chooser_view_content=0x7f0c0025;
         public static final int adjust_height=0x7f0c0011;
         public static final int adjust_width=0x7f0c0012;
         public static final int always=0x7f0c0013;
         public static final int beginning=0x7f0c000d;
+        public static final int button_minOfHellCustomWorkout=0x7f0c0047;
         public static final int button_minOfHellWorkout=0x7f0c0046;
-        public static final int button_snowboardStretches=0x7f0c0048;
-        public static final int button_snowboardWorkout=0x7f0c0047;
-        public static final int button_start_timer=0x7f0c004c;
-        public static final int button_unit_back=0x7f0c004b;
-        public static final int button_unit_skip=0x7f0c004d;
+        public static final int button_snowboardStretches=0x7f0c0049;
+        public static final int button_snowboardWorkout=0x7f0c0048;
+        public static final int button_start_timer=0x7f0c004d;
+        public static final int button_unit_back=0x7f0c004c;
+        public static final int button_unit_skip=0x7f0c004e;
         public static final int checkbox=0x7f0c002d;
         public static final int collapseActionView=0x7f0c0014;
         public static final int default_activity_button=0x7f0c0028;
@@ -850,7 +851,7 @@ containing a value of this type.
         public static final int dropdown=0x7f0c0019;
         public static final int edit_query=0x7f0c0038;
         public static final int end=0x7f0c000e;
-        public static final int exercise_display=0x7f0c004e;
+        public static final int exercise_display=0x7f0c004f;
         public static final int exercise_layout=0x7f0c0044;
         public static final int exercises_overview=0x7f0c0045;
         public static final int expand_activities_button=0x7f0c0026;
@@ -865,7 +866,7 @@ containing a value of this type.
         public static final int list_item=0x7f0c0029;
         public static final int middle=0x7f0c000f;
         public static final int never=0x7f0c0016;
-        public static final int next_exercise_display=0x7f0c0050;
+        public static final int next_exercise_display=0x7f0c0051;
         public static final int none=0x7f0c0010;
         public static final int normal=0x7f0c0005;
         public static final int progress_circular=0x7f0c0036;
@@ -890,9 +891,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f0c001e;
         public static final int submit_area=0x7f0c0041;
         public static final int tabMode=0x7f0c0006;
-        public static final int tableRow1=0x7f0c004a;
-        public static final int time_remaining=0x7f0c004f;
-        public static final int timer_layout=0x7f0c0049;
+        public static final int tableRow1=0x7f0c004b;
+        public static final int time_remaining=0x7f0c0050;
+        public static final int timer_layout=0x7f0c004a;
         public static final int title=0x7f0c002b;
         public static final int title_container=0x7f0c0032;
         public static final int top_action_bar=0x7f0c0020;
@@ -995,23 +996,17 @@ containing a value of this type.
         public static final int common_google_play_services_updating_text=0x7f06001b;
         public static final int common_google_play_services_updating_title=0x7f06001c;
         public static final int common_open_on_phone=0x7f06001d;
-        public static final int minOfHellWorkout=0x7f060033;
-        public static final int snowboardStretches=0x7f060034;
-        public static final int snowboardWorkout=0x7f060035;
-        public static final int start_info_text=0x7f060036;
+        public static final int minOfHellCustomWorkout=0x7f060033;
+        public static final int minOfHellWorkout=0x7f060034;
+        public static final int snowboardStretches=0x7f060035;
+        public static final int snowboardWorkout=0x7f060036;
+        public static final int start_info_text=0x7f060037;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f0a0000;
-        /**  All customizations that are NOT specific to Act_SnowboardStretches particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f0a003a;
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0a003b;
         public static final int TextAppearance_AppCompat_Base_SearchResult=0x7f0a003c;

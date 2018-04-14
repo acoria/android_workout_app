@@ -9,10 +9,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.sixminutesofhell.FRM.Units.Exercise;
-import com.example.sixminutesofhell.FRM.Units.ITrainingUnit;
 import com.example.sixminutesofhell.FRM.IUnitProvider;
 import com.example.sixminutesofhell.FRM.IWorkout;
+import com.example.sixminutesofhell.FRM.Units.Exercise;
+import com.example.sixminutesofhell.FRM.Units.ITrainingUnit;
 import com.example.sixminutesofhell.R;
 import com.example.sixminutesofhell.RuntimeObjectStorage;
 
@@ -62,8 +62,11 @@ public class Act_ConfigureExercises extends ActionBarActivity implements IActivi
 				}
 			}
 		}while(trainingUnit != null);
-		//exerciseOverview.append( "\n" + "\n" + "- exercises are followed by Act_SnowboardStretches 15sec break -" );
+		int length = workout.getTotalWorkoutLength();
+		double calcLengthInMinutes = (length/1000)/60 +0.5;
+		length = (int) calcLengthInMinutes;
 
+		exerciseOverview.append("\n"+ "\n" + "----> Total Length (ca.): " + length +"  Minutes");
 	}
 
 

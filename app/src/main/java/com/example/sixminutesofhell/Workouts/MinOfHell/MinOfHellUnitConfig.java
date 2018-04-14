@@ -9,7 +9,7 @@ import com.example.sixminutesofhell.FRM.UnitConfig;
 
 public class MinOfHellUnitConfig extends UnitConfig {
 
-    MinOfHellUnitConfig(){
+    public MinOfHellUnitConfig(){
         addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_SHORT, 15);
         addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_MIDDLE, 30);
         addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG, 40);

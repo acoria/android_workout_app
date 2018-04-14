@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-v13\\values-w360dp-v13.xml",
+        "outputFile": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-v13\\values-w360dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,31 +11,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\values-w360dp\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 176,
-                        "endColumn": 54,
-                        "endOffset": 226
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-v13\\values-w360dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 54,
-                    "endOffset": 105
-                },
-                "from": {
-                    "file": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\values-w360dp\\values.xml",
+                    "file": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\values-w360dp\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

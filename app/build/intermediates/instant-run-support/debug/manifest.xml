@@ -17,10 +17,10 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         <activity
-            android:name="com.example.sixminutesofhell.Act_ConfigureExercises"
+            android:name="com.example.sixminutesofhell.Activities.Act_ConfigureExercises"
             android:label="@string/app_name" />
         <activity
-            android:name="com.example.sixminutesofhell.Act_TimerDisplay"
+            android:name="com.example.sixminutesofhell.Activities.Act_TimerDisplay"
             android:configChanges="orientation|screenSize" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -30,7 +30,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.example.sixminutesofhell.Act_InitialScreen" >
+        <activity android:name="com.example.sixminutesofhell.Activities.Act_InitialScreen" >
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"
@@ -39,7 +39,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.sixminutesofhell.Act_SnowboardStretches" />
+        <activity android:name="com.example.sixminutesofhell.Activities.Act_SnowboardStretches" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

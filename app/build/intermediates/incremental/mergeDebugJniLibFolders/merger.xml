@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Verena\StudioProjects\2018_01_09_SixMinutesOfHell_snowboardWorkout\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\Verena\StudioProjects\2018_01_09_SixMinutesOfHell_snowboardWorkout\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\src\debug\jniLibs"/></dataSet></merger>

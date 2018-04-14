@@ -15,7 +15,7 @@ class TestUnitConfig extends Test {
 
     @Override
     public boolean test(){
-        IUnitConfig unitConfig = UnitConfigProvider.getUnitConfigProvider();
+        IUnitConfig unitConfig = UnitConfigProviderForTesting.getUnitConfigProvider();
 
         if(unitConfig.getLengthByType(IUnitConfig.UnitLengthType.UNIT_LENGTH_PREP) != UnitConfigForTesting.LENGTH_PREP*1000){
             setPointOfTestFailure("getLengthByType");

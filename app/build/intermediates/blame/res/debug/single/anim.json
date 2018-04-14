@@ -1,50 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Verena\\.android\\build-cache\\cf69a877ee709e4374754e1cb65672e17c028c3c\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\vtewe\\.android\\build-cache\\d9ddcbcaf2a973c480bc3ffb566fa9c830f3f039\\output\\res\\anim\\abc_fade_in.xml"
     }
 ]

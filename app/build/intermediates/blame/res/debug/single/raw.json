@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beepshort.mp3",
-        "source": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\src\\main\\res\\raw\\beepshort.mp3"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beeplong.mp3",
+        "source": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\src\\main\\res\\raw\\beeplong.mp3"
     },
     {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beepshort.mp3",
-        "source": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\src\\main\\res\\raw\\beepshort.mp3"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beeplong.mp3",
-        "source": "C:\\Users\\Verena\\StudioProjects\\2018_01_09_SixMinutesOfHell_snowboardWorkout\\app\\src\\main\\res\\raw\\beeplong.mp3"
-    },
-    {
-        "merged": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beeplong.mp3",
-        "source": "C:\\Users\\Verena\\StudioProjects\\2018_01_06_SixMinutesOfHell_snowboardWorkout\\app\\src\\main\\res\\raw\\beeplong.mp3"
+        "merged": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beepshort.mp3",
+        "source": "C:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\src\\main\\res\\raw\\beepshort.mp3"
     }
 ]

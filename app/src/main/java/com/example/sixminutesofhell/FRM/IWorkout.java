@@ -11,5 +11,6 @@ public interface IWorkout {
 
     IUnitConfig getUnitConfig();
     IUnitProvider getUnitProvider();
+    int getTotalWorkoutLength();
     int getLengthByType(IUnitConfig.UnitLengthType unitLengthType);
 }

@@ -1,39 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="22"
-    build-mode="COLD"
-    density="560dpi"
+    api-level="27"
+    build-mode="HOT_WARM"
+    density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1515530793512"
-    token="2626789057431919251"
-    verifier="COLD_SWAP_REQUESTED" >
+    timestamp="1523704153350"
+    token="-8735423955125149195"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="698" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="286" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="43" />
     <task
         name="verifier"
-        duration="0" />
+        duration="3" />
+
+    <artifact
+        location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
-        timestamp="1515530576345"
+        timestamp="1523702946994"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Verena\StudioProjects\2018_01_06_SixMinutesOfHell_snowboardWorkout\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1515530793512"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1523703393368"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1523703586327"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\builds\debug\1523703586327\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1523703770459"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\builds\debug\1523703770459\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1523703941535"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\builds\debug\1523703941535\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1523704153350"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\vtewe\AndroidStudioProjects\android_workout_app\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
 
 </instant-run>

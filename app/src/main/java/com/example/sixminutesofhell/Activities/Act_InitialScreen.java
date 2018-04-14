@@ -20,11 +20,17 @@ public class Act_InitialScreen extends ActionBarActivity {
 
 
         Button btnMinOfHellWorkout = (Button)findViewById(R.id.button_minOfHellWorkout);
+        Button btnMinOfHellCustomWorkout = (Button)findViewById(R.id.button_minOfHellCustomWorkout);
         Button btnSnowboardWorkout = (Button)findViewById(R.id.button_snowboardWorkout);
         Button btnSnowboardStretches = (Button)findViewById(R.id.button_snowboardStretches);
         btnMinOfHellWorkout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 onWorkoutPick(WorkoutFactory.minOfHellWorkout);
+            }
+        });
+        btnMinOfHellCustomWorkout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onWorkoutPick(WorkoutFactory.minOfHellCustomWorkout);
             }
         });
         btnSnowboardWorkout.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +46,8 @@ public class Act_InitialScreen extends ActionBarActivity {
 
     }
     private void onWorkoutPick(char workoutType){
-        IWorkout workout = WorkoutFactory.createWorkout(workoutType);
+        WorkoutFactory workoutFactory = new WorkoutFactory();
+        IWorkout workout = workoutFactory.createWorkoutByType(workoutType);
         RuntimeObjectStorage.setWorkout(workout);
         showConfigureExercise();
     }

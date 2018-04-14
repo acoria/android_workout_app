@@ -4,6 +4,9 @@ import com.example.sixminutesofhell.FRM.Units.Break;
 import com.example.sixminutesofhell.FRM.Units.ITrainingUnit;
 import com.example.sixminutesofhell.FRM.UnitProvider;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by vtewes on 07.05.2016.
  */
@@ -61,5 +64,10 @@ class TestUnitProvider extends Test{
             addUnitToStack(unit2);
         }
 
+        @Override
+        public ArrayList<ITrainingUnit> getTrainingUnits() {
+
+            return null;
+        }
     }
 }

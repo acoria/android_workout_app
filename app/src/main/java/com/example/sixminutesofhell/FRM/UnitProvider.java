@@ -62,4 +62,8 @@ public abstract class UnitProvider implements IUnitProvider {
     public ITrainingUnit getSuccessor(ITrainingUnit trainingUnit){
         return getUnitById(trainingUnit.getSuccessorId());
     }
+    @Override
+    public ArrayList<ITrainingUnit> getTrainingUnits() {
+        return trainUnits;
+    }
 }

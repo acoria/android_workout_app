@@ -18,6 +18,8 @@ public class RunTests {
         tests.add(new TestExercise());
         tests.add(new TestUnitProvider());
         tests.add(new TestWorkouts());
+        tests.add(new TestWorkout());
+        tests.add(new TestWorkoutFactory());
 
         for(int i = 0; i < tests.size(); i++){
             ITest test = tests.get(i);
