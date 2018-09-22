@@ -44,13 +44,5 @@ public class MinOfHellUnitProvider extends UnitProvider {
         addUnitToStack(new Exercise("Side plank left", IUnitConfig.UnitLengthType.UNIT_LENGTH_SHORT));
         addUnitToStack(new SpecialUnit("Change side", IUnitConfig.UnitLengthType.UNIT_LENGTH_SWAP_SIDE));
         addUnitToStack(new Exercise("Side plank right", IUnitConfig.UnitLengthType.UNIT_LENGTH_SHORT));
-        addUnitToStack(new Break());
-        addUnitToStack(new Exercise("Leg dip right", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
-        addUnitToStack(new Break());
-        addUnitToStack(new Exercise("Leg dip left", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
-        addUnitToStack(new Break());
-        addUnitToStack(new Exercise("Balance right", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
-        addUnitToStack(new SpecialUnit("Change side", IUnitConfig.UnitLengthType.UNIT_LENGTH_SWAP_SIDE));
-        addUnitToStack(new Exercise("Balance left", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
     }
 }

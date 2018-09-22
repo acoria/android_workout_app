@@ -23,7 +23,7 @@ import com.example.sixminutesofhell.Workouts.WorkoutProvider;
 public class Act_InitialScreen extends AppCompatActivity {
 
     private boolean myWorkout = true;
-//    private boolean myWorkout = false;
+//    private boolean myWorkout = false
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
