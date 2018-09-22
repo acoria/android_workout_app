@@ -1,9 +1,11 @@
 package com.example.sixminutesofhell.Activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -47,6 +49,7 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     Button btnStartTimer;
     Button btnUnitSkip;
     Button btnUnitBack;
+    FloatingActionButton fabHome;
 
     //state of the activity
     CharSequence activityStateForRestore = STATE_INITIAL;
@@ -169,15 +172,22 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
             btnUnitSkip.setVisibility(View.VISIBLE);
             nextExerciseDisplay.setVisibility(View.VISIBLE);
         }
+        if(activityStateForRestore == STATE_COMPLETED){
+            fabHome.show();
+        }else{
+            fabHome.hide();
+        }
 
     }
 
     private void setActivityDisplayToInitial(){
         btnStartTimer.setVisibility(View.VISIBLE); //show button
+        fabHome.hide();
         btnStartTimer.setText("Start");
     }
     private void setActivityDisplayToCompleted(){
         btnStartTimer.setVisibility(View.INVISIBLE); //hide button
+        fabHome.show();
         setTextfield("Done", exerciseDisplay);
         timerDisplay.setText("0:00");
     }
@@ -245,11 +255,27 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
         timerDisplay = (TextView)findViewById(R.id.time_remaining);
         timerDisplay.setTextColor(textColour);
 
-        btnStartTimer = (Button)findViewById(R.id.button_start_timer);
-        btnUnitBack = (Button)findViewById(R.id.button_unit_back);
-        btnUnitSkip = (Button)findViewById(R.id.button_unit_skip);
+        btnStartTimer = findViewById(R.id.button_start_timer);
+        btnUnitBack = findViewById(R.id.button_unit_back);
+        btnUnitSkip = findViewById(R.id.button_unit_skip);
+
+        setupFabHome();
         initializeFromNewUnit();
     }
+
+    private void setupFabHome() {
+        final Intent intent = new Intent(this, Act_InitialScreen.class);
+        fabHome = findViewById(R.id.fab_home);
+        fabHome.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+    }
+
     //called before onStop()
     protected void onSaveInstanceState(Bundle outState) {
 
