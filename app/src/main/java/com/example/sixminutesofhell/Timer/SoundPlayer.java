@@ -3,11 +3,15 @@ package com.example.sixminutesofhell.Timer;
 import java.util.HashMap;
 
 import android.content.Context;
+import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.Log;
 
 import com.example.sixminutesofhell.R;
+
+import static android.media.AudioAttributes.CONTENT_TYPE_SONIFICATION;
+import static android.media.AudioAttributes.FLAG_AUDIBILITY_ENFORCED;
 
 
 public class SoundPlayer {
@@ -56,7 +60,15 @@ public class SoundPlayer {
 	private void initSounds() {
 		//arguments: simultaneous streams of 2 / type STREAM_MUSIC / sample-rate converter quality
 		//soundPool = new SoundPool(2, AudioManager.STREAM_MUSIC, 100);
-		soundPool = new SoundPool(2, AudioManager.STREAM_NOTIFICATION, 100);
+        AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                .setFlags(FLAG_AUDIBILITY_ENFORCED)
+                .setContentType(CONTENT_TYPE_SONIFICATION)
+                .build();
+        soundPool = new SoundPool.Builder()
+                .setMaxStreams(10)
+                .setAudioAttributes(audioAttributes)
+                .build();
+		//soundPool = new SoundPool(2, AudioManager.STREAM_NOTIFICATION, 100);
 		soundPoolMap = new HashMap<Integer, Integer>(1);    
 		soundPoolMap.put( S1, soundPool.load(this.context, R.raw.beepshort, 1) );
 		soundPoolMap.put( S2, soundPool.load(this.context, R.raw.beeplong, 1) );

@@ -15,4 +15,12 @@
     <string name="minOfHellCustomWorkout">6 Minutes of Hell Workout - Custom</string>
     <string name="snowboardWorkout">Intermediate Snowboard Workout</string>
     <string name="snowboardStretches">Snowboard Stretches</string>
+    <string name="workoutCore">Core</string>
+    <string name="workoutStetch">Stretches</string>
+    <string name="workout20min">20 minutes</string>
+    <string name="workout10min">10 minutes</string>
+    <string name="workout15min">15 minutes</string>
+    <string name="exercise_list">Exercise List</string>
+    <string name="totalLength">Total Length (ca.)</string>
+    <string name="minutes">Minutes</string>
 </resources>

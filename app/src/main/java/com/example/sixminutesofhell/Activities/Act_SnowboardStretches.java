@@ -1,10 +1,11 @@
 package com.example.sixminutesofhell.Activities;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
 import com.example.sixminutesofhell.R;
 
-public class Act_SnowboardStretches extends ActionBarActivity {
+public class Act_SnowboardStretches extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

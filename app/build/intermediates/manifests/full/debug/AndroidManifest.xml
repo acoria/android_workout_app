@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sixminutesofhell"
-    android:versionCode="1"
-    android:versionName="1.0" > <!-- mine: 2.3 Gingerbread / API 10 -->
+    package="com.example.sixminutesofhell" > <!-- mine: 2.3 Gingerbread / API 10 -->
     <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="22"
+        android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -13,23 +11,18 @@
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        android:testOnly="true"
+        android:theme="@style/Theme.AppTheme" >
         <activity
             android:name="com.example.sixminutesofhell.Activities.Act_ConfigureExercises"
             android:label="@string/app_name" />
         <activity
             android:name="com.example.sixminutesofhell.Activities.Act_TimerDisplay"
             android:configChanges="orientation|screenSize" />
-        <!--
-             ATTENTION: This was auto-generated to add Google Play services to your project for
-             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-        -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <activity android:name="com.example.sixminutesofhell.Activities.Act_InitialScreen" >
             <intent-filter>
                 <action

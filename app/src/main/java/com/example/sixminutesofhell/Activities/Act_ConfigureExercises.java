@@ -3,7 +3,7 @@ package com.example.sixminutesofhell.Activities;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -16,7 +16,7 @@ import com.example.sixminutesofhell.FRM.Units.ITrainingUnit;
 import com.example.sixminutesofhell.R;
 import com.example.sixminutesofhell.RuntimeObjectStorage;
 
-public class Act_ConfigureExercises extends ActionBarActivity implements IActivityScreen {
+public class Act_ConfigureExercises extends AppCompatActivity implements IActivityScreen {
 
 	static final String TAG = "Act_ConfigureExercises";
 
@@ -43,11 +43,8 @@ public class Act_ConfigureExercises extends ActionBarActivity implements IActivi
 
 	//set the list of exercises
 	public void addExerciseList(){
-		TextView exerciseOverview;
-		exerciseOverview = (TextView)findViewById(R.id.exercises_overview);
-		int textColour = getResources().getColor(R.color.magenta);
-		exerciseOverview.setTextColor(textColour);
-		exerciseOverview.append("\n" + "\n" + "------Exercise List:------" + "\n");
+		int textColour = getResources().getColor(R.color.black);
+		LinearLayout linearLayout = findViewById(R.id.exercise_list);
 		IWorkout workout = RuntimeObjectStorage.getWorkout();
 		IUnitProvider unitProvider = workout.getUnitProvider();
 		ITrainingUnit trainingUnit = unitProvider.getFirst();
@@ -55,8 +52,12 @@ public class Act_ConfigureExercises extends ActionBarActivity implements IActivi
 			trainingUnit = unitProvider.getSuccessor(trainingUnit);
 			if(trainingUnit != null){
 				try {
-					Exercise unit = (Exercise) trainingUnit;
-					exerciseOverview.append( "\n" + trainingUnit.getTitle() );
+					Exercise exercise = (Exercise) trainingUnit;
+					TextView textView = new TextView(this);
+					textView.setTextColor(textColour);
+					textView.setText(trainingUnit.getTitle());
+					textView.setPaddingRelative(0,0,0,10);
+					linearLayout.addView(textView);
 				}catch (ClassCastException exc){
 					//only show Exercises and skip Breaks etc.
 				}
@@ -66,7 +67,12 @@ public class Act_ConfigureExercises extends ActionBarActivity implements IActivi
 		double calcLengthInMinutes = (length/1000)/60 +0.5;
 		length = (int) calcLengthInMinutes;
 
-		exerciseOverview.append("\n"+ "\n" + "----> Total Length (ca.): " + length +"  Minutes");
+		TextView textView = new TextView(this);
+		textView.setTextSize(15);
+		textView.setTextColor(getResources().getColor(R.color.gray));
+		textView.setText(getResources().getString(R.string.totalLength)+ " " + length + " " + getResources().getString(R.string.minutes));
+		textView.setPaddingRelative(0,20,0,0);
+		linearLayout.addView(textView);
 	}
 
 
@@ -78,7 +84,7 @@ public class Act_ConfigureExercises extends ActionBarActivity implements IActivi
 	}
 
 	@Override
-	public ActionBarActivity getActivity(){
+	public AppCompatActivity getActivity(){
 		return this;
 	}
 }

@@ -1,7 +1,0 @@
-#Fri Apr 13 23:24:11 CEST 2018
-base.0=C\:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a733073fcf09cad017336381a55b6801d312991e
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_e27dd8bea7155a1c59b221e68cd813f779007a3a\\classes.dex
-base.1=C\:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_e27dd8bea7155a1c59b221e68cd813f779007a3a
-file.0=C\:\\Users\\vtewe\\AndroidStudioProjects\\android_workout_app\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a733073fcf09cad017336381a55b6801d312991e\\classes.dex

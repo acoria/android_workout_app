@@ -21,7 +21,7 @@ public class MinOfHellCustomUnitProvider extends UnitProvider {
         addUnitToStack(new Exercise("Wall sit"));
         addUnitToStack(new Break());
         addUnitToStack(new Exercise("Push-Up"));
-        addUnitToStack(new Break());
+        addUnitToStack(new SpecialUnit("Break", IUnitConfig.UnitLengthType.UNIT_LENGTH_SWAP_SIDE));
         addUnitToStack(new Exercise("Sit-Up"));
         addUnitToStack(new Break());
         addUnitToStack(new Exercise("Jump onto Plyobox", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
@@ -35,7 +35,7 @@ public class MinOfHellCustomUnitProvider extends UnitProvider {
         addUnitToStack(new Exercise("High knees"));
         addUnitToStack(new Break());
         addUnitToStack(new Exercise("Lunge right", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
-        addUnitToStack(new SpecialUnit("Change side", IUnitConfig.UnitLengthType.UNIT_LENGTH_SWAP_SIDE));
+        addUnitToStack(new Break());
         addUnitToStack(new Exercise("Lunge left", IUnitConfig.UnitLengthType.UNIT_LENGTH_LONG));
         addUnitToStack(new Break());
         addUnitToStack(new Exercise("Push-Up & rotation"));

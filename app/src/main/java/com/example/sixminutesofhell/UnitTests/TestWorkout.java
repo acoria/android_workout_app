@@ -7,8 +7,6 @@ import com.example.sixminutesofhell.FRM.UnitConfig;
 import com.example.sixminutesofhell.FRM.UnitProvider;
 import com.example.sixminutesofhell.FRM.Units.Break;
 import com.example.sixminutesofhell.FRM.Units.Exercise;
-import com.example.sixminutesofhell.FRM.Units.ITrainingUnit;
-import com.example.sixminutesofhell.FRM.Units.MainUnit;
 import com.example.sixminutesofhell.FRM.Workout;
 
 /**
@@ -40,6 +38,16 @@ class TestWorkout extends Test{
 
         private IUnitProvider unitProvider;
         private IUnitConfig unitConfig;
+
+        @Override
+        public Character getId() {
+            return null;
+        }
+
+        @Override
+        public int getName() {
+            return 0;
+        }
 
         @Override
         protected void buildUnitConfig() {

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -25,7 +25,7 @@ import com.example.sixminutesofhell.Timer.TrainingTimer;
 /**
  * Created by Verena on 08.05.2016.
  */
-public class Act_TimerDisplay extends ActionBarActivity implements ITimerObserver, IActivityScreen {
+public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserver, IActivityScreen {
 
     static final String TAG = "Act_TimerDisplay";
     static final String UNIT_ID = "UnitId";
@@ -248,8 +248,7 @@ public class Act_TimerDisplay extends ActionBarActivity implements ITimerObserve
         btnStartTimer = (Button)findViewById(R.id.button_start_timer);
         btnUnitBack = (Button)findViewById(R.id.button_unit_back);
         btnUnitSkip = (Button)findViewById(R.id.button_unit_skip);
-
-
+        initializeFromNewUnit();
     }
     //called before onStop()
     protected void onSaveInstanceState(Bundle outState) {
@@ -346,7 +345,7 @@ public class Act_TimerDisplay extends ActionBarActivity implements ITimerObserve
     }
 
     @Override
-    public ActionBarActivity getActivity(){
+    public AppCompatActivity getActivity(){
         return this;
     }
 
