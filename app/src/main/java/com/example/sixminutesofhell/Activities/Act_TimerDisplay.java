@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -23,6 +24,10 @@ import com.example.sixminutesofhell.R;
 import com.example.sixminutesofhell.RuntimeObjectStorage;
 import com.example.sixminutesofhell.Timer.SoundPlayer;
 import com.example.sixminutesofhell.Timer.TrainingTimer;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Verena on 08.05.2016.
@@ -44,16 +49,49 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     TrainingTimer timer;
     ITrainingUnit currentTrainingUnit;
     boolean initialCallOfUnit;
-    TextView exerciseDisplay, nextExerciseDisplay, timerDisplay;
     int remainingTime, lastId;
-    Button btnStartTimer;
-    Button btnUnitSkip;
-    Button btnUnitBack;
-    FloatingActionButton fabHome;
+
+    @BindView(R.id.exercise_display) TextView exerciseDisplay;
+    @BindView(R.id.next_exercise_display) TextView nextExerciseDisplay;
+    @BindView(R.id.time_remaining) TextView timerDisplay;
+
+    @BindView(R.id.timer_layout) ConstraintLayout layout;
+
+    @BindView(R.id.button_start_timer) Button btnStartTimer;
+    @BindView(R.id.button_unit_skip) Button btnUnitSkip;
+    @BindView(R.id.button_unit_back) Button btnUnitBack;
+    @BindView(R.id.fab_home) FloatingActionButton fabHome;
+
 
     //state of the activity
     CharSequence activityStateForRestore = STATE_INITIAL;
     CharSequence timerState;
+
+    @OnClick(R.id.button_start_timer) void onStartTimer() {
+        timerState = timer.getState();
+        if (timerState == TrainingTimer.STATE_RUNNING) {
+            timer.pauseTimer();
+        } else if (timerState == TrainingTimer.STATE_PAUSED) {
+            soundPlayer.setVolumeForTimerActivity();
+            timer.resumeTimer();
+        } else if (timerState == TrainingTimer.STATE_INITIAL || timerState == TrainingTimer.STATE_STOPPED) {
+            soundPlayer.setVolumeForTimerActivity();
+            timer.startTimer();
+        } else {
+            Log.e(TAG, "onResume: unexpected timer stated");
+        }
+    }
+    @OnClick(R.id.button_unit_skip) void onButtonSkipUnit(){
+        skipUnit();
+    }
+    @OnClick(R.id.button_unit_back) void onButtonBack(){
+        backOneUnit();
+    }
+    @OnClick(R.id.fab_home) void onFabHome(){
+        final Intent intent = new Intent(this, Act_InitialScreen.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
 
     public Act_TimerDisplay(){
         MainUnit.setTestMode(false);
@@ -119,9 +157,11 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
         initialCallOfUnit = true;
 
         setActivityDisplayToStarted();
+        turnScreenIntoButton();
+    }
 
+    private void turnScreenIntoButton() {
         //makes the entire screen Act_SnowboardStretches button
-        LinearLayout layout = (LinearLayout) findViewById(R.id.timer_layout);
         layout.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -129,8 +169,8 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
                 return false;
             }
         });
-
     }
+
     private void backOneUnit(){
         timer.stopTimer();
         if(currentTrainingUnit.hasPredecessor()){
@@ -242,38 +282,12 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer_display);
+        ButterKnife.bind(this);
 
 		/*set button to resume when recreated
 		if (savedInstanceState != null) {...}*/
-       setVolumeControls();
-        int textColour = getResources().getColor(R.color.gray);
-
-        exerciseDisplay = (TextView)findViewById(R.id.exercise_display);
-        exerciseDisplay.setTextColor(textColour);
-        nextExerciseDisplay = (TextView)findViewById(R.id.next_exercise_display);
-        nextExerciseDisplay.setTextColor(textColour);
-        timerDisplay = (TextView)findViewById(R.id.time_remaining);
-        timerDisplay.setTextColor(textColour);
-
-        btnStartTimer = findViewById(R.id.button_start_timer);
-        btnUnitBack = findViewById(R.id.button_unit_back);
-        btnUnitSkip = findViewById(R.id.button_unit_skip);
-
-        setupFabHome();
+        setVolumeControls();
         initializeFromNewUnit();
-    }
-
-    private void setupFabHome() {
-        final Intent intent = new Intent(this, Act_InitialScreen.class);
-        fabHome = findViewById(R.id.fab_home);
-        fabHome.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
     }
 
     //called before onStop()
@@ -341,33 +355,6 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     protected void onResume() {
         super.onResume();
         setVolumeControls();
-        btnStartTimer.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                timerState = timer.getState();
-                if (timerState == TrainingTimer.STATE_RUNNING) {
-                    timer.pauseTimer();
-                } else if (timerState == TrainingTimer.STATE_PAUSED) {
-                    soundPlayer.setVolumeForTimerActivity();
-                    timer.resumeTimer();
-                } else if (timerState == TrainingTimer.STATE_INITIAL || timerState == TrainingTimer.STATE_STOPPED) {
-                    soundPlayer.setVolumeForTimerActivity();
-                    timer.startTimer();
-                } else {
-                    Log.e(TAG, "onResume: unexpected timer stated");
-                }
-            }
-        });
-        btnUnitSkip.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                skipUnit();
-            }
-        });
-        btnUnitBack.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                backOneUnit();
-            }
-        });
-
     }
 
     @Override

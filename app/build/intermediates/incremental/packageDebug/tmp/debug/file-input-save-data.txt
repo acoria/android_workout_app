@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Sep 22 16:55:41 CEST 2018
+#Mon Oct 08 21:10:43 CEST 2018
 2.base=C\:\\Users\\vtewe\\StudioProjects\\android_workout_app\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 5.set=DEX
 0.path=classes.dex

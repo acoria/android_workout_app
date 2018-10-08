@@ -43,7 +43,6 @@ public class Act_ConfigureExercises extends AppCompatActivity implements IActivi
 
 	//set the list of exercises
 	public void addExerciseList(){
-		int textColour = getResources().getColor(R.color.black);
 		LinearLayout linearLayout = findViewById(R.id.exercise_list);
 		IWorkout workout = RuntimeObjectStorage.getWorkout();
 		IUnitProvider unitProvider = workout.getUnitProvider();
@@ -52,9 +51,8 @@ public class Act_ConfigureExercises extends AppCompatActivity implements IActivi
 			trainingUnit = unitProvider.getSuccessor(trainingUnit);
 			if(trainingUnit != null){
 				try {
-					Exercise exercise = (Exercise) trainingUnit;
+					Exercise exercise = (Exercise) trainingUnit; //needed to check if it is an exercise
 					TextView textView = new TextView(this);
-					textView.setTextColor(textColour);
 					textView.setText(trainingUnit.getTitle());
 					textView.setPaddingRelative(0,0,0,10);
 					linearLayout.addView(textView);
