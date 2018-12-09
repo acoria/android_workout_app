@@ -13,6 +13,7 @@ public interface ITrainingUnit {
     int getPredecessorId();
     int getSuccessorId();
     IUnitConfig.UnitLengthType getUnitLengthType();
+    int getInfoImage();
 
     boolean hasPredecessor();
     boolean hasSuccessor();
@@ -21,5 +22,5 @@ public interface ITrainingUnit {
     void setUnitLengthType(IUnitConfig.UnitLengthType unitLengthType);
     void setPredecessorId(int predecessorId);
     void setSuccessorId(int successorId);
-
+    void setInfoImage(int infoImage);
 }

@@ -1,5 +1,7 @@
 package com.example.sixminutesofhell.FRM.Units;
 
+import android.graphics.drawable.Drawable;
+
 import com.example.sixminutesofhell.FRM.IUnitConfig;
 import com.example.sixminutesofhell.RuntimeObjectStorage;
 
@@ -16,6 +18,7 @@ public abstract class MainUnit implements ITrainingUnit {
     private int predecessorId;
     private int successorId;
     private IUnitConfig.UnitLengthType unitLengthType;
+    private int infoImage;
 
     public MainUnit(String unitName, IUnitConfig.UnitLengthType unitLengthType){
         this.id = currentId++;
@@ -48,6 +51,11 @@ public abstract class MainUnit implements ITrainingUnit {
     @Override
     public int getSuccessorId() {
         return successorId;
+    }
+
+    @Override
+    public int getInfoImage() {
+        return infoImage;
     }
 
     @Override
@@ -85,4 +93,8 @@ public abstract class MainUnit implements ITrainingUnit {
         isInTestMode = testModeOn;
     }
 
+    @Override
+    public void setInfoImage(int infoImage) {
+        this.infoImage = infoImage;
+    }
 }

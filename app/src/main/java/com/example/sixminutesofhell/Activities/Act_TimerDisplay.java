@@ -1,5 +1,6 @@
 package com.example.sixminutesofhell.Activities;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -7,12 +8,16 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.sixminutesofhell.Timer.ITimerObserver;
@@ -50,6 +55,8 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     ITrainingUnit currentTrainingUnit;
     boolean initialCallOfUnit;
     int remainingTime, lastId;
+    private RelativeLayout infoDialogLayout;
+    private AlertDialog infoDialog;
 
     @BindView(R.id.exercise_display) TextView exerciseDisplay;
     @BindView(R.id.next_exercise_display) TextView nextExerciseDisplay;
@@ -61,6 +68,8 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     @BindView(R.id.button_unit_skip) Button btnUnitSkip;
     @BindView(R.id.button_unit_back) Button btnUnitBack;
     @BindView(R.id.fab_home) FloatingActionButton fabHome;
+    @BindView(R.id.image_info) ImageView imageInfo;
+    @BindView(R.id.exercise_image) ImageView exerciseImage;
 
 
     //state of the activity
@@ -193,31 +202,50 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
             setActivityDisplayToCompleted();
         }
     }
-    private void initializeFromNewUnit(){
+    private void initializeFromNewUnit() {
         remainingTime = currentTrainingUnit.getLength();
         setUnitDisplaysFromCurrentUnit();
 
         btnStartTimer.setVisibility(View.VISIBLE); //show button
 
         //check if back/skip button should be hidden
-        if(!currentTrainingUnit.hasPredecessor()){
+        if (!currentTrainingUnit.hasPredecessor()) {
             btnUnitBack.setVisibility(View.INVISIBLE);
-        }else{
+        } else {
             btnUnitBack.setVisibility(View.VISIBLE);
         }
-        if(!currentTrainingUnit.hasSuccessor()){
+        if (!currentTrainingUnit.hasSuccessor()) {
             btnUnitSkip.setVisibility(View.INVISIBLE);
             nextExerciseDisplay.setVisibility(View.INVISIBLE);
-        }else{
+        } else {
             btnUnitSkip.setVisibility(View.VISIBLE);
             nextExerciseDisplay.setVisibility(View.VISIBLE);
         }
-        if(activityStateForRestore == STATE_COMPLETED){
+        if (activityStateForRestore == STATE_COMPLETED) {
             fabHome.show();
-        }else{
+        } else {
             fabHome.hide();
         }
+        if (currentTrainingUnit.getInfoImage() == 0) {
+            imageInfo.setVisibility(View.INVISIBLE);
+        } else {
+            imageInfo.setVisibility(View.VISIBLE);
 
+            if (infoDialog == null) {
+                infoDialogLayout = (RelativeLayout) LayoutInflater.from(this).inflate(R.layout.layout_image_info, null);
+                infoDialog = new AlertDialog.Builder(this)
+                        .setView(infoDialogLayout)
+                        .create();
+            }
+            exerciseImage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    infoDialog.show();
+                }
+            });
+            ImageView image = infoDialogLayout.findViewById(R.id.image_info);
+            image.setImageDrawable(ContextCompat.getDrawable(getActivity(), currentTrainingUnit.getInfoImage()));
+        }
     }
 
     private void setActivityDisplayToInitial(){
