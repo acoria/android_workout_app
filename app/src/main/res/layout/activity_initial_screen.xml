@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.sixminutesofhell.Activities.Act_InitialScreen"
     android:orientation="vertical"
-    android:background="@color/imageBlue">
+    android:background="@color/imageBlue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:id="@+id/lay_workout_buttons"
         android:layout_width="match_parent"
@@ -15,9 +16,36 @@
         android:orientation="vertical"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"/>
-    <ImageView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/silhouette_main"/>
+        android:background="@drawable/silhouette_main"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp">
+        <android.support.design.button.MaterialButton
+            android:id="@+id/button_youtube_workout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:icon="@drawable/icons8_youtube_30dp"
+            app:iconSize="20dp"
+            android:text="@string/workout"
+            app:iconTint="@null" />
+        <android.support.design.button.MaterialButton
+            android:id="@+id/button_youtube"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/button_youtube_workout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:icon="@drawable/icons8_youtube_30dp"
+            app:iconSize="20dp"
+            app:iconTint="@null"
+            android:layout_gravity="end"/>
+    </android.support.constraint.ConstraintLayout>
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/silhouette_main"/>-->
 </LinearLayout>

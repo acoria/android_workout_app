@@ -1,7 +1,7 @@
 package com.example.sixminutesofhell.Workouts;
 
-import com.example.sixminutesofhell.FRM.IWorkoutProvider;
 import com.example.sixminutesofhell.FRM.IWorkout;
+import com.example.sixminutesofhell.FRM.IWorkoutProvider;
 
 import java.util.ArrayList;
 import java.util.List;

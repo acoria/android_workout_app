@@ -81,11 +81,11 @@
 			android:textSize="25sp"/>
 	</android.support.constraint.ConstraintLayout>
 	<android.support.design.widget.FloatingActionButton
-		android:id="@+id/fab_home"
+		android:id="@+id/fab_repeat"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_gravity="bottom|right"
 		android:layout_margin="16dp"
-		android:src="@drawable/ic_home_white_36dp"
+		android:src="@drawable/ic_repeat_one_white_36dp"
 		app:layout_anchorGravity="bottom|right|end" />
 </android.support.design.widget.CoordinatorLayout>

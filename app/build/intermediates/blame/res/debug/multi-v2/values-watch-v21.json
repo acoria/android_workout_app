@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\vtewe\\StudioProjects\\android_workout_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\vtewe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc01.aar\\5a863a6923d14186b7136461788838f4\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\vtewe\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc01.aar\\4bc0010747e6469453ff59d4f6352a1c\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

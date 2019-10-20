@@ -11,7 +11,7 @@ public class SnowboardUnitConfig extends UnitConfig {
 
     SnowboardUnitConfig(){
         addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_MIDDLE, 60);
-        addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_BREAK, 15);
+        addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_BREAK, 20);
         addUnitLength(IUnitConfig.UnitLengthType.UNIT_LENGTH_PREP, 3);
     }
 }

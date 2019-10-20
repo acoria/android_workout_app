@@ -87,7 +87,7 @@ public class SnowboardStretchesUnitProvider extends UnitProvider {
         addUnitToStack(trainingUnit);
 
         trainingUnit = new Exercise("Hip Flexor Stretch", IUnitConfig.UnitLengthType.UNIT_LENGTH_SHORT);
-        trainingUnit.setInfoImage(R.drawable.pirifirmis_stretch);
+        trainingUnit.setInfoImage(R.drawable.hip_flexor_stretch);
         addUnitToStack(trainingUnit);
     }
 }

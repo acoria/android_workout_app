@@ -12,13 +12,16 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import com.example.sixminutesofhell.Timer.ITimerObserver;
 import com.example.sixminutesofhell.FRM.Units.ITrainingUnit;
@@ -67,7 +70,7 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     @BindView(R.id.button_start_timer) Button btnStartTimer;
     @BindView(R.id.button_unit_skip) Button btnUnitSkip;
     @BindView(R.id.button_unit_back) Button btnUnitBack;
-    @BindView(R.id.fab_home) FloatingActionButton fabHome;
+    @BindView(R.id.fab_repeat) FloatingActionButton fabRepeat;
     @BindView(R.id.image_info) ImageView imageInfo;
     @BindView(R.id.exercise_image) ImageView exerciseImage;
 
@@ -96,9 +99,10 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
     @OnClick(R.id.button_unit_back) void onButtonBack(){
         backOneUnit();
     }
-    @OnClick(R.id.fab_home) void onFabHome(){
-        final Intent intent = new Intent(this, Act_InitialScreen.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    @OnClick(R.id.fab_repeat) void onFabRepeat(){
+        //restarts the current activity
+        Intent intent = new Intent(this, Act_TimerDisplay.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 
@@ -222,12 +226,13 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
             nextExerciseDisplay.setVisibility(View.VISIBLE);
         }
         if (activityStateForRestore == STATE_COMPLETED) {
-            fabHome.show();
+            fabRepeat.show();
         } else {
-            fabHome.hide();
+            fabRepeat.hide();
         }
         if (currentTrainingUnit.getInfoImage() == 0) {
             imageInfo.setVisibility(View.INVISIBLE);
+            exerciseImage.setOnClickListener(null);
         } else {
             imageInfo.setVisibility(View.VISIBLE);
 
@@ -243,6 +248,7 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
                     infoDialog.show();
                 }
             });
+
             ImageView image = infoDialogLayout.findViewById(R.id.image_info);
             image.setImageDrawable(ContextCompat.getDrawable(getActivity(), currentTrainingUnit.getInfoImage()));
         }
@@ -250,12 +256,12 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
 
     private void setActivityDisplayToInitial(){
         btnStartTimer.setVisibility(View.VISIBLE); //show button
-        fabHome.hide();
+        fabRepeat.hide();
         btnStartTimer.setText("Start");
     }
     private void setActivityDisplayToCompleted(){
         btnStartTimer.setVisibility(View.INVISIBLE); //hide button
-        fabHome.show();
+        fabRepeat.show();
         setTextfield("Done", exerciseDisplay);
         timerDisplay.setText("0:00");
     }
@@ -316,6 +322,30 @@ public class Act_TimerDisplay extends AppCompatActivity implements ITimerObserve
 		if (savedInstanceState != null) {...}*/
         setVolumeControls();
         initializeFromNewUnit();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.timer_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+       switch(item.getItemId()){
+           case R.id.action_navigate_home:
+               returnToHomeScreen();
+               break;
+               default: Log.e(TAG, "Menu item not handled");
+       }
+       return true;
+    }
+
+    private void returnToHomeScreen() {
+        final Intent intent = new Intent(this, Act_InitialScreen.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
     //called before onStop()

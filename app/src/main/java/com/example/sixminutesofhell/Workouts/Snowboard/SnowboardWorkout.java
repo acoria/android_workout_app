@@ -42,5 +42,4 @@ public class SnowboardWorkout extends Workout {
         unitConfig = new SnowboardUnitConfig();
     }
 
-
 }

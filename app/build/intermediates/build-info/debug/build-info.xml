@@ -2,30 +2,38 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="22"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xhdpi"
     format="10"
-    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.1.3"
-    timestamp="1544396558701"
+    timestamp="1546964985883"
     token="7375169754036685405"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="4758" />
+        duration="4472" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="96" />
+        duration="2060" />
     <task
         name="verifier"
-        duration="226" />
+        duration="65" />
 
     <artifact
-        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -34,22 +42,19 @@
         location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -57,32 +62,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1544389166452"
+        timestamp="1546964985883"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
@@ -93,16 +74,7 @@
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1544396558701"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -111,22 +83,19 @@
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\vtewe\StudioProjects\android_workout_app\app\build\intermediates\instant-run-apk\debug\app-debug.apk"

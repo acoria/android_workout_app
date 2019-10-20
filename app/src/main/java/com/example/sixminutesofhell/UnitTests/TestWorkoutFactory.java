@@ -52,7 +52,7 @@ class TestWorkoutFactory extends Test{
         try {
             SnowboardWorkout snowboardWorkout = (SnowboardWorkout) workout;
         }catch (ClassCastException e){
-            setPointOfTestFailure("SnowboardWorkout");
+            setPointOfTestFailure("XletixBarbwireBattleWorkout");
             return false;
         }
         workout = workoutFactory.createWorkoutByType(snowboardStretches);
